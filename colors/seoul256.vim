@@ -115,7 +115,7 @@ if !exists('s:rgb_map')
         \ 244: '#808080', 245: '#8a8a8a', 246: '#949494',
         \ 247: '#9e9e9e', 248: '#a8a8a8', 249: '#b2b2b2',
         \ 250: '#bcbcbc', 251: '#c6c6c6', 252: '#d0d0d0',
-        \ 253: '#dadada', 254: '#e4e4e4', 255: '#eeeeee' }
+        \ 253: '#dadada', 254: '#eeedd1', 255: '#eeeeee' }
     else
         let s:rgb_map = { 16: '#000000',
         \  22: '#006F00', 23: '#007173', 24: '#007299', 25: '#0074BE', 30: '#009799',
@@ -410,7 +410,7 @@ call s:hi('SignifySignDelete', [161, 161], [s:dark_bg + 1, s:light_bg - 2])
 " --------
 call s:hi('CocFloating', [s:dark_fg, s:light_fg], [s:dark_bg_2, s:light_bg - 2])
 
-" http://vim.wikia.com/wiki/Highlight_unwanted_spaces     
+" http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 " ---------------------------------------------------^^^^^
 call s:hi('ExtraWhitespace', ['', ''], [s:dark_bg - 1, s:light_bg - 2])
 
